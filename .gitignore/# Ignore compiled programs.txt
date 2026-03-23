@@ -1,0 +1,5 @@
+# Ignore compiled programs
+*.exe
+
+# Track only C files
+!*.c
