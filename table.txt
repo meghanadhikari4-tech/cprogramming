@@ -1,0 +1,22 @@
+//program in c to read content from table.txt and display the content
+#include<stdio.h>
+#include<stdlib.h>
+int main(){
+    FILE *fp;
+    int ch;
+
+    fp = fopen("table.txt", "r");
+    if(fp == NULL) {
+        printf("file error!\n");
+        exit(1);
+    }
+
+    while((ch = fgetc(fp)) != EOF) {
+        printf("%c", ch);
+    }
+
+    fclose(fp);
+
+    printf("\n\n program completed\n");
+    return 0;
+}
