@@ -10,7 +10,7 @@ int main(){
 		
 	}
 	else{
-		printf("the given character is not vowel");
+		printf("the given character is not Vowel");
 	}
 	return 0;
 
